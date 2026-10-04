@@ -4,40 +4,46 @@ Programación Orientada a Objetos · Ingeniería Mecatrónica · Tercer semestre
 
 Llena cada espacio conforme avances en las fases de [PRACTICA.md](PRACTICA.md).
 
+<br>
+
 ## Fase 1. Entender el problema
 
 **1.1 El problema con mis propias palabras**
 
-[Inserta aquí tu respuesta]
+Tengo que realizar un codigo orientado a objetos que pueda organizar canciones y podcast dentro de una playlist. Cada cancion y podcast tiene un titulo y una duracion pero las canciones solo tienen artista y genero y para cada podcast le corresponde un anfitrion y un numero de episodios. Al final segun lo almazenado en la playlist esta podra mostrar las pistas que exixsten y la duracion total de contenido disponible dentro de la playlist.
 
 **1.2 Sustantivos (posibles clases) y verbos (posibles métodos)**
 
-Sustantivos: _____
+**Sustantivos:** Cancion, pista, duracion, playlist, artista, genero, anfitrion, episodios
 
-Verbos: _____
+**Verbos:** Crear, agregar, calcular, obtener, cambiar, mostrar, imprimir, contar
 
 **1.3 Relaciones** (completa con "es un", "tiene un" o "usa un")
 
-*   Una canción _____ pista.
-*   Un podcast _____ pista.
-*   Una pista _____ duración.
-*   Una playlist _____ canción.
+*   Una canción es una pista.
+*   Un podcast es una pista.
+*   Una pista tiene una duración.
+*   Una playlist tiene usa una canción (podcast).
+
+<br>
 
 ## Fase 2. Diseñar la solución
 
 **2.1 Diagrama de clases**
 
-![Diagrama de clases](diseno_solucion.png)
+![Diagrama de clases](./img/DiagramaClases.png)
 
 **2.2 Justificación de cada relación**
 
 | Relación | Tipo | ¿Por qué? |
 | --- | --- | --- |
-| Cancion - Pista | _____ | _____ |
-| Podcast - Pista | _____ | _____ |
-| Pista - Duracion | _____ | _____ |
-| Playlist - Cancion | _____ | _____ |
-| Playlist - Podcast | _____ | _____ |
+| Cancion - Pista | Herencia | Una cancion es una pista por que comparte los datos de la pista (titulo y duracion).|
+| Podcast - Pista | Herencia | Un podcast es una pista por que comparte los datos de la pista (titulo y duracion). |
+| Pista - Duracion | Composicion | Toda pista tiene una duracion, en este caso una cancion y un podcast tiene una cantidad de segundos y minutos. |
+| Playlist - Cancion | Agregacion | La playlist utiliza canciones para crearse o formarse.  |
+| Playlist - Podcast | Agreagacion | La playlist tambien utiliza podcast para crearse y formarse. |
+
+<br>
 
 ## Fase 3. Implementar
 
@@ -56,6 +62,8 @@ Experimento 1, orden de construcción y destrucción: _____
 Experimento 2, ¿quién es dueño de quién?: _____
 
 Experimento 3, un objeto en dos playlists: _____
+
+<br>
 
 ## Fase 4. Probar y mejorar
 
@@ -81,11 +89,15 @@ Experimento 3, un objeto en dos playlists: _____
 
 Retos opcionales que intenté: _____
 
+<br>
+
 ## Fase 5. Publicar en GitHub
 
 **5.1 Enlace a mi fork**
 
 [Inserta aquí el enlace a tu fork]
+
+<br>
 
 ## Cierre y reflexión
 
