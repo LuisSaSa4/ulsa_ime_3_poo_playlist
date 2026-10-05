@@ -107,3 +107,50 @@ void Playlist::mostrar() const
     duracionTotal().imprimir();
     std::cout << std::endl;
 }
+
+// Implementación del Reto Opcional: Pista más larga y más corta
+void Playlist::mostrarMasLargaYCorta() const {
+    if (cantidadPistas() == 0) {
+        std::cout << "La playlist esta vacia. No hay pistas para comparar." << std::endl;
+        return;
+    }
+
+    Pista* masLarga = nullptr;
+    int maxSegundos = -1;
+
+    Pista* masCorta = nullptr;
+    int minSegundos = 999999;
+
+    // Buscar en canciones
+    for (Cancion* cancion : canciones) {
+        int segs = cancion->getDuracion().totalSegundos();
+        if (segs > maxSegundos) {
+            maxSegundos = segs;
+            masLarga = cancion;
+        }
+        if (segs < minSegundos) {
+            minSegundos = segs;
+            masCorta = cancion;
+        }
+    }
+
+    // Buscar en podcasts
+    for (Podcast* podcast : podcasts) {
+        int segs = podcast->getDuracion().totalSegundos();
+        if (segs > maxSegundos) {
+            maxSegundos = segs;
+            masLarga = podcast;
+        }
+        if (segs < minSegundos) {
+            minSegundos = segs;
+            masCorta = podcast;
+        }
+    }
+
+    std::cout << "--- Estadisticas de duracion ---" << std::endl;
+    std::cout << "Pista mas larga: " << std::endl;
+    if (masLarga != nullptr) masLarga->mostrarInfo();
+
+    std::cout << "Pista mas corta: " << std::endl;
+    if (masCorta != nullptr) masCorta->mostrarInfo();
+}

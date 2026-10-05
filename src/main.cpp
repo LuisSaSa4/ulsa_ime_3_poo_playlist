@@ -72,12 +72,23 @@ Cancion cancion1(
 
     playlist1.mostrar();
 
+// Prueba del reto opcional
+    std::cout << "\n=============================" << std::endl;
+    std::cout << "RETO OPCIONAL: PISTA MAS LARGA Y CORTA" << std::endl;
+    std::cout << "=============================" << std::endl;
+    playlist1.mostrarMasLargaYCorta();
+
     std::cout << "\n=============================" << std::endl;
     std::cout << "PLAYLIST 2" << std::endl;
     std::cout << "=============================" << std::endl;
 
     playlist2.mostrar();
 
+    // Prueba del reto opcional para la Playlist 2
+    std::cout << "\n=============================" << std::endl;
+    std::cout << "RETO OPCIONAL (PLAYLIST 2): PISTA MAS LARGA Y CORTA" << std::endl;
+    std::cout << "=============================" << std::endl;
+    playlist2.mostrarMasLargaYCorta();
 
     // TODO 5.4: experimentos guiados de la Fase 3.
 std::cout << "\n=============================" << std::endl;
@@ -168,7 +179,7 @@ std::cout << "\n=============================" << std::endl;
     std::cout << "7. Puntero nulo: "
               << resultadoNulo << std::endl;
 
-              
+
     // 8. Total con 2 canciones y 1 podcast.
     Playlist pruebaTotal("Prueba de duracion total");
 

@@ -29,6 +29,8 @@ class Playlist{
     int cantidadPistas() const;
     Duracion duracionTotal() const;
     void mostrar() const;
+    // Reto opcional: Pista más larga y más corta
+    void mostrarMasLargaYCorta() const;
 };
 
 //
