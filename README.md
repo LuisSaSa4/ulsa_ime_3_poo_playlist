@@ -87,7 +87,7 @@ Tengo que realizar un codigo orientado a objetos que pueda organizar canciones y
 | 1 | Los segundos podían ser mayores a 59. | Agregué la normalización de minutos y segundos en Duracion. |Para que una duración como 0:75 se muestre correctamente como 1:15.  |
 | 2 | Se podían agregar canciones nulas o duplicadas. |  Agregué validaciones en agregarCancion().|  Para evitar punteros nulos y canciones repetidas dentro de la playlist.|
 
-Retos opcionales que intenté: _____
+Retos opcionales que intenté: Encontrar y mostrar la pista más larga y la más corta de la playlist
 
 <br>
 
