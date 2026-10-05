@@ -29,7 +29,7 @@ class Cancion : public Pista{
 
 // Pregunta: ¿puede Cancion leer directamente el atributo titulo de Pista?
 // ¿Por qué sí o por qué no?
-// Respuesta: No. El atributo titulo es private en Pista, por lo que
+// No, el atributo titulo es private en Pista, por lo que
 // Cancion no puede acceder directamente a él. Debe utilizar métodos
 // públicos de Pista, como getTitulo().
 

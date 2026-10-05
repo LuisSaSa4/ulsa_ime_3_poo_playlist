@@ -38,7 +38,7 @@ class Playlist{
 // Pregunta: la Playlist no tiene destructor que haga delete de las pistas.
 // ¿Por qué eso es lo correcto en una agregación?
 // Porque la Playlist no es dueña de las canciones ni de los
-// podcasts. Solo guarda punteros a objetos que existen fuera de ella.
-// Por eso no debe hacer delete de esas pistas.
+// podcasts ya que solo guarda punteros a objetos que existen fuera de ella,
+// por eso no debe hacer delete de esas pistas.
 
 #endif

@@ -22,6 +22,7 @@ public:
     void imprimir() const;
     
     // Pregunta: ¿qué significa el const al final de estos métodos?
+    //Significa que el método es de solo lectura y garantiza que no modificará ningún atributo del objeto.
 };
 
 #endif

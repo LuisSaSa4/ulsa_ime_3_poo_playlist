@@ -26,10 +26,10 @@ class Podcast:public Pista{
 };
 
 
-//   siguiendo el mismo patrón que Cancion.
+//   Siguiendo el mismo patrón que Cancion.
 //
 // Pregunta: ¿qué código te ahorraste gracias a la herencia?
-// Nos ahorramos volver a declarar y programar los atributos
+// Se ahorro volver a declarar y programar los atributos
 // y métodos que Podcast hereda de Pista, como titulo, duracion,
 // getTitulo(), getDuracion(), setTitulo() y mostrarInfo().
 
