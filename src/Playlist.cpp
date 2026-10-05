@@ -5,7 +5,10 @@
 #include <iostream>
 
 // TODO 4.1: implementa el constructor de Playlist.
-
+Playlist::Playlist(const std::string& nombre)
+    : nombre(nombre)
+{
+}
 // TODO 4.2: implementa  bool Playlist::agregarCancion(Cancion* cancion)
 //   Devuelve false si el puntero es nullptr o si la canción ya está en la
 //   playlist; en otro caso la agrega y devuelve true.
